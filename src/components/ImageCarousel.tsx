@@ -1,10 +1,12 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Section from "./Section";
+import SectionWrapper from "./Section";
+import { motion } from "framer-motion";
+import { fadeIn } from "./animation";
 
 const ImageCarousel: React.FC = () => (
-	<div>
+	<motion.div variants={fadeIn("right", "twen", 0.35, 0.5)}>
 		<div className="w-2/6 mx-auto mt-8 mb-8 pb-10 pt-10">
 			<Carousel
 				autoPlay={true}
@@ -65,11 +67,11 @@ const ImageCarousel: React.FC = () => (
 				</div>
 			</Carousel>
 		</div>
-	</div>
+	</motion.div>
 );
 
 const ImageCarouselSection = () => {
-	return <Section Component={ImageCarousel} id="image_carousel" />;
+	return <SectionWrapper Component={ImageCarousel} id="image_carousel" />;
 };
 
 export default ImageCarouselSection;

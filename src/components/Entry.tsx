@@ -1,6 +1,8 @@
+import { motion, MotionConfig } from "framer-motion";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { styles } from "../../styles.js";
+import { textVariant } from "./animation.js";
 
 const Entry: React.FC = () => (
 	<section className="page-pattern relative w-full h-[100vh] mx-auto">
@@ -33,14 +35,22 @@ const Entry: React.FC = () => (
 						/>
 					</span>
 				</h1>
-				<p
-					className={`mt-8 text-white text-sm sm:text-base md:text-lg lg:text-lg xl:max-w-4xl xl:text-xl 2xl:text-xl`}
+
+				<motion.div
+					variants={textVariant(0.35)}
+					initial="hidden"
+					whileInView="show"
 				>
-					Feliz cumpleaños, Jorge! 🎉 We built a birthday website you cunt,
-					celebrating your journey under the digital sky, where every click is a
-					reminder that age is just a number, unlike your dark humour, which
-					seems to get darker with every passing year!😱
-				</p>
+					<p
+						className={`mt-8 text-white text-sm sm:text-base md:text-lg lg:text-lg xl:max-w-4xl xl:text-xl 2xl:text-xl`}
+					>
+						Feliz cumpleaños, Jorge! 🎉 We built a birthday website for you,
+						cunt, to celebrate your life journey under the digital and cloudy
+						sky of Denmark. It is a reminder that age is just a number which
+						keeps increasing like entropy and your fucking dark humour with each
+						passing year!😨 Cheers buddy 🥂🍾💫
+					</p>
+				</motion.div>
 			</div>
 		</div>
 	</section>

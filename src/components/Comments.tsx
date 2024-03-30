@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "./Section";
+import SectionWrapper from "./Section";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -31,6 +31,10 @@ const messages = [
 	{
 		text: '"I hope you like this shit."',
 		person: "E S A G",
+	},
+	{
+		text: '"Mouth-watering is my ass."',
+		person: "Mahatma Gandhi",
 	},
 ];
 
@@ -100,7 +104,7 @@ const Comments = () => {
 const CommentsSection = () => {
 	return (
 		<div className="pb-32">
-			<Section Component={Comments} id="comments" />{" "}
+			<SectionWrapper Component={Comments} id="comments" />{" "}
 		</div>
 	);
 };
