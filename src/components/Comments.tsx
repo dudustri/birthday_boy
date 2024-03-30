@@ -10,7 +10,7 @@ const messages = [
 	},
 	{
 		text: '"La concha de tu madre hijo de puta mal parido."',
-		person: "Guan-Ting",
+		person: "Pablo",
 	},
 	{
 		text: '"I don\'t know, there something weird with this dude. I think he has sexual attraction for new english words to compose his vocabulary."',
@@ -35,6 +35,10 @@ const messages = [
 	{
 		text: '"Mouth-watering is my ass."',
 		person: "Mahatma Gandhi",
+	},
+	{
+		text: '"Hi Jorge, happy birthday! You become older and older when your biceps become bigger and bigger. I am happy to celebrate your birthday! 🎁 Let\'s enjoy the nice weather and drink until morning!"',
+		person: "Guan",
 	},
 ];
 

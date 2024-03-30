@@ -13,10 +13,10 @@ const Entry: React.FC = () => (
 				className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
 			/>
 		</div>
-		<div className="flex justify-center items-center text-center mt-[-50px] sm:mt-[-44px] md:mt-[-38px] lg:mt-[-34px] xl:mt-[-30px] 2xl:mt-[-24px]">
-			<div className="rounded-full bg-opacity-70 bg-black pr-24 pl-24 pt-12 pb-12">
+		<div className="flex justify-center items-center text-center mt-[-70px] sm:mt-[-44px] md:mt-[-38px] lg:mt-[-34px] xl:mt-[-30px] 2xl:mt-[-24px]">
+			<div className="rounded-full bg-opacity-70 bg-black pr-8 pl-8 pt-6 pb-6 sm:pr-12 sm:pl-12 lg:pr-16 lg:pl-16 xl:pr-20 xl:pl-20 2xl:pr-24 2xl:pl-24">
 				<h1 className={styles.pageHeadText}>
-					<span className="text-cyan-300 text-2xl max-w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+					<span className="text-cyan-300 text-xl max-w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
 						<Typewriter
 							options={{
 								strings: [
@@ -42,7 +42,7 @@ const Entry: React.FC = () => (
 					whileInView="show"
 				>
 					<p
-						className={`mt-8 text-white text-sm sm:text-base md:text-lg lg:text-lg xl:max-w-4xl xl:text-xl 2xl:text-xl`}
+						className={`mt-8 text-white text-[10px] sm:text-base md:text-lg lg:text-lg xl:max-w-4xl xl:text-xl 2xl:text-xl`}
 					>
 						Feliz cumpleaños, Jorge! 🎉 We built a birthday website for you,
 						cunt, to celebrate your life journey under the digital and cloudy

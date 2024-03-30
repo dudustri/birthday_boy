@@ -7,7 +7,7 @@ import { fadeIn } from "./animation";
 
 const ImageCarousel: React.FC = () => (
 	<motion.div variants={fadeIn("right", "twen", 0.35, 0.5)}>
-		<div className="w-2/6 mx-auto mt-8 mb-8 pb-10 pt-10">
+		<div className="w-3/6 mx-auto mt-8 mb-8 pb-10 pt-10">
 			<Carousel
 				autoPlay={true}
 				autoFocus={true}
@@ -16,8 +16,9 @@ const ImageCarousel: React.FC = () => (
 				interval={3000}
 				infiniteLoop={true}
 				showStatus={true}
-				showThumbs={true}
-				transitionTime={1000} // Adjust the transition duration (in milliseconds)
+				showThumbs={false}
+				transitionTime={1000}
+				swipeable={true}
 			>
 				<div className="flex justify-center items-center">
 					<img src="/1.jpg" alt="Slide 1" />
