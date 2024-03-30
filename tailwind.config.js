@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,tsx,ts}"
+  ],
   mode: "jit",
   theme: {
     extend: {
@@ -13,17 +16,14 @@ module.exports = {
         "white-100": "#f3f3f3",
         "blue-brabo": "#3E6B89",
       },
-      boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
-      },
-      screens: {
-        xs: "450px",
-      },
-      backgroundImage: {
-        "page-pattern": "url('/src/assets/pexels-stephan-seeber-1054218.jpg')",
-      },
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 };
-

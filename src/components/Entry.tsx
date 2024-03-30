@@ -1,26 +1,31 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { motion } from "framer-motion";
-import { styles } from "../../styles";
+import { styles } from "../../styles.js";
 
-const Entry = () => (
-	<section className="relative w-full h-[85vh] max-h-entry mx-auto">
-		<div className="absolute inset-0 top-[120px] mx-auto flex flex-row items-start gap-8">
-			<div className="flex flex-col justify-center items-center mt-5">
-				<div className="w-5 h-5 rounded-full bg-[#fff59d] z-10" />
-				<div className="w-1 sm:h-80 h-40 yellow-gradient" />
-			</div>
-			<div className="max-w-entry-text">
+const Entry: React.FC = () => (
+	<section className="page-pattern relative w-full h-[100vh] mx-auto">
+		<div className="flex h-3/5 justify-center items-center">
+			<img
+				src="/team/birthdayboy.jpg"
+				alt="Profile"
+				className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
+			/>
+		</div>
+		<div className="flex justify-center items-center text-center mt-[-50px] sm:mt-[-44px] md:mt-[-38px] lg:mt-[-34px] xl:mt-[-30px] 2xl:mt-[-24px]">
+			<div className="rounded-full bg-opacity-70 bg-black pr-24 pl-24 pt-12 pb-12">
 				<h1 className={styles.pageHeadText}>
-					<span className="text-[#fff59d]">
+					<span className="text-cyan-300 text-2xl max-w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
 						<Typewriter
 							options={{
 								strings: [
 									"Hello Jorge!",
 									"Oi Jorginho?",
-									"Hola Jorgito uaaaaaaaa ~",
+									"Hola Jorgito uaaaaaa ~",
+									"Arrombado do caralho",
 									"Terror de la España",
+									"El pistolero de Mallorca",
 									"Hijo de puta",
+									"Chimarrão lover",
 								],
 								autoStart: true,
 								loop: true,
@@ -28,31 +33,14 @@ const Entry = () => (
 						/>
 					</span>
 				</h1>
-				<p className={`${styles.pageSubText} mt-5 text-white`}>
-					This is your birthday page! Feliz cumpleaños con su momento de la base
-					de datos de la base de datos de la base de datos de la base!
+				<p
+					className={`mt-8 text-white text-sm sm:text-base md:text-lg lg:text-lg xl:max-w-4xl xl:text-xl 2xl:text-xl`}
+				>
+					Feliz cumpleaños, Jorge! 🎉 We built a birthday website you cunt,
+					celebrating your journey under the digital sky, where every click is a
+					reminder that age is just a number, unlike your dark humour, which
+					seems to get darker with every passing year!😱
 				</p>
-			</div>
-			<div className="ml-96 ps-20 mt-2">
-				<img
-					src="https://infobrisas-s3.cdn.net.ar/s3i233/2023/07/infobrisas/images/15/07/150748_e940cbef8e77a3543068fe232cf55ce8fa14e26aa100e41821a2050bf4edfb67/xs.jpg"
-					className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
-				/>
-			</div>
-			<div className="absolute xs:bottom-8 bottom-4 w-full flex justify-center items-center">
-				<a href="#HappyPlace">
-					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-200 flex justify-center items-start p-2">
-						<motion.div
-							animate={{ y: [0, 24, 0] }}
-							transition={{
-								duration: 2,
-								repeat: Infinity,
-								repeatType: "loop",
-							}}
-							className="w-2 h-2 rounded-full bg-yellow-200 mb-1"
-						/>
-					</div>
-				</a>
 			</div>
 		</div>
 	</section>
