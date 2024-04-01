@@ -9,7 +9,7 @@ import CreditsSection from "./components/Credits.js";
 function App() {
 	return (
 		<BrowserRouter>
-			<div>
+			<div className="flex flex-col">
 				<Entry />
 				<HappyPlaceSection />
 				<div className="w-full h-0.5 bg-sky-50"></div> {/* Line */}
