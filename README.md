@@ -1,2 +1,2 @@
 # birthday_boy
-Jorge's birthday gift
+One night birthday gift rush for a good friend!
